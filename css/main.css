@@ -893,7 +893,7 @@ body {
   width: 67%;
   margin-left: 10px;
   -webkit-text-stroke-width: 0.6px;
-  transform: translateY(250px);
+  transform: translateY(210px);
   transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
 }
 .dizel-centr .service-centr-text1.animation-class {
