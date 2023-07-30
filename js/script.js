@@ -93,7 +93,7 @@ const scrollAnimation1 = (selector) => {
   scrollItemsimages.forEach((el) => {
     let blockPosition = el.getBoundingClientRect().top;
 
-    if (blockPosition < windowHeight - 250) {
+    if (blockPosition < windowHeight - 200) {
       el.classList.add("animation-class");
     } else {
       el.classList.remove("animation-class");
@@ -105,7 +105,7 @@ const scrollAnimation2 = (selector) => {
   scrollItemsdescr.forEach((el) => {
     let blockPosition = el.getBoundingClientRect().top;
 
-    if (blockPosition < windowHeight - 450) {
+    if (blockPosition < windowHeight - 420) {
       el.classList.add("animation-class");
     } else {
       el.classList.remove("animation-class");
