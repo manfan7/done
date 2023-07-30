@@ -533,7 +533,7 @@ body {
 .section-5::after {
   content: "";
   position: absolute;
-  top: 0;
+  top: 14px;
   left: 267px;
   background-image: url(../img/5132609-04.png);
   width: 1615px;
