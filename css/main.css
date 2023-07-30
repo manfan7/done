@@ -1,0 +1,876 @@
+@import url("https://fonts.googleapis.com/css2?family=Radio+Canada&family=Raleway&display=swap");
+@font-face {
+  font-family: "raleway_my";
+  src: url("../fonts/Raleway-Bold.woff2") format("woff2"),
+    url("../fonts/Raleway-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+:after,
+:before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  max-width: 100vw;
+}
+.container {
+  max-width: 100vw;
+}
+.section-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* background-image: url(../img/mainphoto.jpg);*/
+  background-size: contain;
+  height: 970px;
+  background-repeat: no-repeat;
+  color: #fff;
+  position: relative;
+}
+.section-1 img {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+}
+.header__logo {
+  background-image: url(../img/TIR\ service.png);
+  width: 563px;
+  height: 88px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 54px;
+}
+.header-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header__text-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1560px;
+}
+.header__text-main-class {
+  font-family: raleway_my;
+  font-size: 70px;
+  font-weight: 800;
+  text-align: center;
+  line-height: 77px;
+  margin-bottom: 23px;
+}
+.header__text-main-second {
+  font-size: 30px;
+  line-height: 27px;
+  text-align: center;
+  margin: 0 0 20px 0;
+  opacity: 0.7;
+}
+.header-footer-text {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+.section-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 157px;
+  border-bottom: 1px solid #797979;
+  color: #797975;
+}
+.section-2 .section-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px 0 34px;
+}
+.section-wrapper {
+  width: 1615px;
+}
+.section-2-text {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 52px;
+}
+.section-2__rightside {
+  background-image: url(../img/logo1.png);
+  background-size: cover;
+  width: 154px;
+  height: 144px;
+}
+.section-3,
+.section-4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  will-change: transform;
+}
+.section-3 {
+  opacity: 0;
+  transform: translateY(75px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.section-3.animation-class {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.section-3 .section-wrapper {
+  display: flex;
+  gap: 1%;
+  margin-bottom: 66px;
+  margin-top: 3.2%;
+  width: 1560px;
+}
+.section-3__item {
+  flex: 1;
+  background-color: #f1f3f4;
+  height: 570px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 25px 22px 10px 38px;
+}
+.section__item-header {
+  font-size: calc(1vw + 1vh + 0.7vmin);
+  font-weight: 600;
+  line-height: 38.5px;
+  opacity: 0.5;
+  margin-bottom: 10px;
+}
+.section__item-descr {
+  font-size: calc(0.6vw + 1vh + 0.75vmin);
+  line-height: 42px;
+  font-weight: 400;
+  opacity: 0.5;
+}
+.section-4 {
+  border-top: 1px solid #797975;
+  border-bottom: 1px solid #797975;
+  height: 186px;
+}
+.section-4 .section-wrapper {
+  display: flex;
+  width: 1560px;
+
+  justify-content: space-between;
+}
+.section-4__item {
+  flex: 2;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section-4__item:not(:last-child) {
+  margin-right: -31px;
+}
+.section-4__item:nth-child(2) {
+  margin-left: 59px;
+}
+.section-4__item:nth-child(1) {
+  padding-right: 10px;
+}
+.section-4__item:last-child {
+  text-align: end;
+  flex: 1;
+}
+.section-4__selector {
+  font-size: 27px;
+  line-height: 35.1px;
+  font-weight: 400;
+  opacity: 0.7;
+}
+.section-4__selector:hover {
+  cursor: pointer;
+}
+.service-centr-img {
+  background-image: url(../img/maz.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1083px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.service-centr-logo {
+  position: absolute;
+  top: 0;
+  left: 182px;
+}
+.service-centr-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 87%;
+}
+.text-service {
+  font-size: 55px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 60.5px;
+  letter-spacing: 2px;
+}
+.service-centr-descr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.service-centr-descr::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  height: 100%;
+  width: 100%;
+
+  z-index: -1;
+  background-image: url(../img/5132609-03.png);
+}
+.service-centr-descr .section-wrapper {
+  width: 1560px;
+}
+.service-centr-descr-text {
+  font-size: 33px;
+  line-height: 45.5px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #797975;
+  text-align: center;
+  padding-top: 10px;
+  padding-left: 19px;
+}
+.service-centr-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.service-centr-images .section-wrapper {
+  width: 1560px;
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 10px;
+  margin-top: 10px;
+}
+.service-centr-images-item {
+  display: flex;
+  width: 49%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 518px;
+  margin-bottom: 15px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.service-centr-images-item.animation-class {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.image1 {
+  background-image: url(../img/Group69.jpg);
+  margin-right: 15px;
+}
+.image2 {
+  background-image: url(../img/Group70.jpg);
+}
+.image3 {
+  background-image: url(../img/Group71.jpg);
+  margin-right: 15px;
+}
+.image4 {
+  background-image: url(../img/Group42.jpg);
+}
+.images-descr {
+  font-size: 60px;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-left: 62px;
+}
+.service-centr-plus {
+}
+.service-centr-plus .section-wrapper {
+  margin: auto;
+}
+.service-centr-plus-text {
+  font-size: 35px;
+  line-height: 45.5px;
+  font-weight: 600;
+  color: #797975;
+  text-align: center;
+  padding-bottom: 30px;
+  position: relative;
+}
+.service-centr-plus-text::before {
+  content: "";
+  position: absolute;
+
+  z-index: -1;
+  background-image: url(../img/5132609-03.png);
+  top: -162px;
+  height: 216px;
+  left: 300px;
+  width: 57%;
+
+  transform: rotate(-181deg) scale(1.5);
+}
+.service-centr-clients {
+  background-color: rgba(241, 243, 244, 0.5);
+  border-top: 1px solid #797975;
+  border-bottom: 1px solid #797975;
+  padding-bottom: 5px;
+}
+.service-centr-clients .section-wrapper {
+  margin: auto;
+  width: 1560px;
+  display: flex;
+  gap: 1%;
+}
+.clients-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.clients-item:nth-child(1) {
+  margin-right: 44px;
+  margin-left: 10px;
+}
+.clients-item:nth-child(3) .clients-item-title,
+.clients-item:nth-child(3) .clients-item-descr {
+  padding-left: 15px;
+  width: 99%;
+}
+.bolderWeichai {
+  font-weight: 900;
+}
+.clients-item-title {
+  font-size: 40px;
+  height: 93px;
+  padding-top: 20px;
+}
+.boldtitle {
+  font-weight: 600;
+  color: #5a5a57;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke-width: 3px;
+}
+.clients-item-descr {
+  font-size: 28px;
+  line-height: 39.2px;
+  font-weight: 400;
+  color: #5a5a57;
+}
+.colorcenter {
+  color: #5a5a57;
+}
+.section-container {
+  overflow: hidden;
+  position: relative;
+}
+.canadafont {
+  font-family: "Radio Canada", sans-serif;
+  font-weight: 600;
+  color: #5a5a57;
+}
+.service-centr-svidetelstvo {
+  position: relative;
+}
+.service-centr-svidetelstvo::after {
+  content: "";
+  position: absolute;
+  background-image: url(../img/5132609-01.png);
+  background-repeat: no-repeat;
+  width: 100vw;
+
+  height: 1707px;
+
+  top: -1215px;
+  left: -17px;
+  z-index: -1;
+}
+.service-centr-svidetelstvo .section-wrapper {
+  margin: auto;
+  width: 960px;
+  margin-top: 41px;
+  display: flex;
+  gap: 6%;
+  margin-bottom: 25px;
+}
+.service-centr-cena {
+  border-top: 1px solid #797975;
+  border-bottom: 1px solid #797975;
+  background-color: rgba(241, 243, 244, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.service-centr-cena .section-wrapper {
+  width: 1560px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 14px;
+}
+.cena-item {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  color: #797975;
+  margin-left: 9px;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.cena-item.animation-class {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.cena-item:not(:last-child) {
+  border-bottom: 1px solid #797975;
+}
+.cena-item-main {
+  font-size: 45px;
+  color: #797975;
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-text-stroke-width: 0.6px;
+}
+.cena-item-descr {
+  font-size: 23px;
+  line-height: 23px;
+  width: 12%;
+  font-weight: 400;
+}
+.header-cena {
+  height: 144px;
+  padding-right: 97px;
+}
+.cena-item-content {
+  font-size: 28px;
+  line-height: 30.8px;
+  font-weight: 400;
+  width: 37%;
+}
+.cena-item-content:not(:last-child) {
+  margin-bottom: 21px;
+}
+.cena-item-kolvo,
+.cena-item-summ {
+  font-size: 30px;
+  line-height: 27px;
+  font-weight: 400;
+}
+.cena-item-summ {
+  padding-right: 149px;
+}
+.cena-item-kolvo {
+  margin-left: 164px;
+}
+.content-before {
+  position: relative;
+  margin-left: 42px;
+  margin-bottom: 55px;
+  margin-top: 21px;
+}
+.content-before::before {
+  content: "";
+  position: absolute;
+  left: -24px;
+  top: 9px;
+  background-color: #797975;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+.section-5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 50px;
+}
+.section-5::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 267px;
+  background-image: url(../img/5132609-04.png);
+  width: 1615px;
+  height: 608px;
+  z-index: -1;
+}
+.section-5 .section-wrapper {
+  width: 1560px;
+  display: flex;
+  margin-top: 65px;
+  gap: 3%;
+}
+.section-5-image {
+  opacity: 0;
+  transform: translateY(250px);
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+  z-index: 2;
+  position: relative;
+}
+.section-5-image.animation-class {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+  z-index: 2;
+}
+.section-5-descr {
+  font-weight: 500;
+  -webkit-text-stroke-width: 0.6px;
+  width: 94.4%;
+  opacity: 0;
+  z-index: 1;
+  transform: translateX(-200px);
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+  transition-delay: 0.2s;
+}
+.section-5-descr.animation-class {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+  transition-delay: 0.2s;
+}
+.fontsimple {
+  font-family: "Radio Canada";
+  font-weight: 400;
+}
+.section-6 {
+  display: flex;
+  background-color: #f1f3f4;
+  border-top: 1px solid #797975;
+  justify-content: end;
+  position: relative;
+}
+.section-6:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background-color: #797975;
+  width: 51%;
+  bottom: 65%;
+  left: 0;
+}
+.section-6 .section-wrapper {
+  width: 90.5%;
+  display: flex;
+}
+/* .item-map {
+  width: 950px;
+  height: 859px;
+} */
+.map {
+  width: 933px;
+  height: 859px;
+}
+[class*="copyrights-pane"] {
+  display: none !important;
+}
+[class*="ground-pane"] {
+  background-color: red;
+}
+.section-6__item {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.section-6__item-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.first-item {
+  display: block;
+  margin-top: 12px;
+}
+.smallwidth {
+  width: 70%;
+  margin-bottom: -12px;
+}
+.section-6__itemheader {
+  font-size: 42px;
+  line-height: 40.5px;
+  font-weight: 700;
+  color: #797975;
+  -webkit-text-stroke-width: 0.6px;
+}
+.section-6__itemheader-info {
+  font-size: 30px;
+  line-height: 33px;
+  font-weight: 500;
+  color: #797975;
+  -webkit-text-stroke-width: 0.5px;
+}
+.column-descr {
+  font-size: 23px;
+  font-weight: 600;
+  color: #797975;
+  line-height: 16.1px;
+}
+.numberfont {
+  font-family: "Radio Canada";
+  font-weight: 500;
+  -webkit-text-stroke-width: 0.5px;
+}
+.upper {
+  text-transform: uppercase;
+}
+.second-item {
+  margin-top: 5px;
+}
+.second-item .second-item-items {
+  flex: 1;
+}
+.second-item-items .column-descr:nth-child(2) {
+  margin-top: -7px;
+}
+.third-item {
+  width: 52%;
+  display: block;
+  margin-top: -22px;
+}
+.third-item .column-descr:nth-child(2) {
+  margin-top: -7px;
+  margin-bottom: -16px;
+}
+.fourth-item {
+  margin-top: -20px;
+}
+.fourth-item-items:nth-child(2) {
+  width: 33%;
+}
+.fourth-item-items:nth-child(3) {
+  width: 50%;
+  text-align: start;
+}
+.fourth-item-items:nth-child(4) .column-descr {
+  margin-top: -12px;
+}
+.fourth-item-items.a {
+  width: 100%;
+}
+.a .column-descr {
+  margin-bottom: -11px;
+}
+.five-item {
+  margin-top: 7px;
+  flex-direction: column;
+}
+.five-item h4 {
+  margin-top: 3px;
+  margin-bottom: 16px;
+}
+.footer-content {
+  display: flex;
+  justify-content: end;
+  background-color: #797975;
+  color: #f1f3f4;
+  font-family: "Radio Canada";
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 600;
+}
+.footer-content .section-wrapper {
+  width: 90.5%;
+}
+.footer-text-descr {
+  margin-bottom: 2px;
+  margin-top: 2px;
+  font-weight: 500;
+}
+.footer-text-descr:first-child {
+  margin-top: 25px;
+}
+.footer-text-descr:nth-child(4) {
+  margin-top: -1px;
+}
+.footer-text-descr:last-child {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.content {
+  display: none;
+  transform: translateX(125%);
+}
+
+.content.active {
+  display: block;
+  transform: translateX(0);
+  animation: translate 0.5s ease-in-out;
+}
+@keyframes translate {
+  0% {
+    transform: translateX(125%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/*---------section servciecentr--------*/
+.imageservice {
+  background-image: url(../img/krasivo.jpg);
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+  transform: translateY(350px);
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+.imageservice.animation-class {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+.service .service-centr-text1 {
+  font-size: 55px;
+  line-height: 55px;
+  color: #fff;
+  opacity: 0;
+  font-weight: 700;
+  margin-top: -59px;
+  width: 67%;
+  margin-left: 10px;
+  -webkit-text-stroke-width: 0.6px;
+  transform: translateY(250px);
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+.service-centr-text1.animation-class {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+.service-why {
+  font-size: 40px;
+  line-height: 52px;
+  padding-top: 0px;
+  padding-left: 29px;
+  font-weight: 600;
+  margin-top: 47px;
+}
+.service-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 52px;
+}
+.service-content .section-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 1585px;
+  padding-left: 22px;
+  align-items: center;
+}
+.service-item-row {
+  display: flex;
+  align-items: center;
+}
+.service-item-row:last-child {
+  margin-top: -5px;
+}
+.firstof {
+  margin-top: -17px;
+}
+.service-column-text {
+  width: 92%;
+  position: relative;
+}
+.service-column-text:not(:last-child):after {
+  content: "";
+  position: absolute;
+  width: 101%;
+  height: 1px;
+  background-color: #797975;
+  bottom: -21px;
+  left: 0;
+}
+.service-column-image {
+  opacity: 0;
+  transform: translateY(150px);
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+  z-index: 2;
+}
+.service-column-image.animation-class {
+  opacity: 1;
+  z-index: 2;
+  position: relative;
+  transform: translateY(0);
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+.anima-wrapper {
+  opacity: 0;
+  z-index: 1;
+  transform: translateX(200px);
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+  transition-delay: 0.2s;
+}
+.anima-wrapper.animation-class {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+  transition-delay: 0.2s;
+}
+.animaright {
+  opacity: 0;
+  z-index: 1;
+  padding-left: 34px;
+  transform: translateX(-200px);
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+  transition-delay: 0.2s;
+}
+.animaright.animation-class {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+  transition-delay: 0.2s;
+}
+.animaright .service-column-text:not(:last-child)::after {
+  content: none;
+}
+.animaright .service-column-text {
+  width: 94%;
+}
+/*------------dizelcentr------------*/
+.imagedizel {
+  background-image: url(../img/bosch.jpg);
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+  transform: translateY(350px);
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+.imagedizel.animation-class {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+.dizel-centr .service-centr-text1 {
+  color: #fff;
+  opacity: 0;
+  font-weight: 700;
+  margin-top: -59px;
+  width: 67%;
+  margin-left: 10px;
+  -webkit-text-stroke-width: 0.6px;
+  transform: translateY(250px);
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
