@@ -16,7 +16,7 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
       scrub: true,
     },
   }
-); */
+); 
 
 gsap.fromTo(
   ".service-centr-logo",
@@ -54,7 +54,7 @@ gsap.fromTo(
     },
   }
 );
-/* gsap.fromTo(
+ gsap.fromTo(
   ".service-centr-images-item",
   {
     opacity: 0,
