@@ -105,7 +105,7 @@ const scrollAnimation2 = (selector) => {
   scrollItemsdescr.forEach((el) => {
     let blockPosition = el.getBoundingClientRect().top;
 
-    if (blockPosition < windowHeight - 3500) {
+    if (blockPosition < windowHeight - 350) {
       el.classList.add("animation-class");
     } else {
       el.classList.remove("animation-class");
