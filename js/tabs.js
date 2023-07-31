@@ -65,4 +65,11 @@ const tabs = () => {
 
   // Табы со знаменитостями
   bindTabs(".selectRazd", ".content", "active", '[data-tab="tab-1"]', "#tab-1");
+  bindTabs(
+    ".selectmobile",
+    ".content",
+    "active",
+    '[data-tab="tab-10"]',
+    "#tab-10"
+  );
 };

@@ -6,10 +6,10 @@ function init() {
       center: center,
       zoom: 18,
       controls: ["routeButtonControl"],
+      autoFitToViewport: "always",
     },
     {
       // searchControlProvider: "yandex#search",
-      autoFitToViewport: "always",
     }
   );
   var control = map.controls.get("routeButtonControl");
@@ -69,6 +69,77 @@ function init() {
   );
   // map.geoObjects.add(placemark);
   map.geoObjects.add(placemark1);
+  //placemark1.balloon.open(); //открывает балун //
+  let mapmobi = new ymaps.Map(
+    "mapmobile",
+    {
+      center: center,
+      zoom: 18,
+      controls: ["routeButtonControl"],
+      autoFitToViewport: "always",
+    },
+    {
+      // searchControlProvider: "yandex#search",
+    }
+  );
+  var controlmobi = mapmobi.controls.get("routeButtonControl");
+  controlmobi.routePanel.state.set({
+    type: "masstransit",
+    fromEnabled: true,
+    //from: center,
+    toEnabled: false,
+    to: center,
+  });
+  controlmobi.routePanel.options.set({
+    types: {
+      masstransit: true,
+      pedestrian: true,
+      taxi: true,
+    },
+  });
+  mapmobi.controls.remove("trafficControl");
+  mapmobi.controls.remove("searchControl");
+  mapmobi.controls.remove("rulerControl");
+  mapmobi.controls.remove("fullscreenControl");
+  mapmobi.controls.remove("zoomControl");
+  mapmobi.controls.remove("geolocationControl");
+  //mapmobi.behaviors.disable(["scrollZoom"]);
+  mapmobi.controls.remove("typeSelector"); // удаляем контроль трафика
+  /*  let placemark = new ymaps.Placemark(
+    center,
+    {
+      balloonContentHeader: "header of Baloon",
+      balloonContentBody: "Body of balloon",
+      balloonContentFooter: "Footer of Balloon",
+    },
+    {
+      iconLayout: "default#image",
+      iconImageHref: "./img/map.png",
+      iconImageSize: [64, 64],
+      iconImageOffset: [-40, -40],
+      //preset: "islands#yellowStretchyIcon",
+    }
+  ); */
+  let placemark2 = new ymaps.Placemark(
+    center,
+    {
+      balloonContent: `
+     <div class="balloon">
+     <div class="balloon__address">Партизанский проспект, 178</div>
+    
+     </div>
+     `,
+    },
+    {
+      iconLayout: "default#image",
+      iconImageHref: "./img/map.png",
+      iconImageSize: [64, 64],
+      iconImageOffset: [-40, -40],
+      //preset: "islands#yellowStretchyIcon",
+    }
+  );
+  // map.geoObjects.add(placemark);
+  mapmobi.geoObjects.add(placemark2);
   //placemark1.balloon.open(); //открывает балун //
 }
 
