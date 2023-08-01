@@ -74,9 +74,9 @@ function init() {
     "mapmobile",
     {
       center: center,
-      zoom: 18,
+      zoom: 15,
       controls: ["routeButtonControl"],
-      autoFitToViewport: "always",
+      //autoFitToViewport: "always",//
     },
     {
       // searchControlProvider: "yandex#search",

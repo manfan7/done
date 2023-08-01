@@ -1,4 +1,4 @@
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+AOS.init();
 
 /* gsap.fromTo(
   ".section-3",
@@ -122,6 +122,7 @@ window.addEventListener("scroll", () => {
 });
 /*-----------------scroll to cena------------*/
 const cena = document.querySelectorAll(".cenalink");
+const cenaMobile = document.querySelector(".cenatabmobile");
 
 for (let item of cena) {
   item.addEventListener("click", function () {
@@ -145,3 +146,28 @@ const nav = document.querySelector(".nav");
 burger.addEventListener("click", () => {
   nav.classList.toggle("open");
 });
+cenaMobile.addEventListener("click", () => {
+  const activeTab = document.querySelector(".content.active");
+  let activeCena = activeTab.querySelector("." + cenaMobile.dataset.goto);
+  console.log(activeCena);
+  let main = document.querySelector(".content-mobi-main");
+  const maincena = document.querySelector(".cenatablinkmain");
+  if (activeTab.classList.contains("content-dizel-service")) {
+    detectActiveCena(activeCena);
+  } else if (activeTab.classList.contains(main)) {
+    detectActiveCena(maincena);
+  } else {
+    let content = document.querySelectorAll(".content");
+    content.forEach((item) => item.classList.remove("active"));
+    main.classList.add("active");
+    detectActiveCena(maincena);
+  }
+});
+function detectActiveCena(item) {
+  const goToBlockValue = item.getBoundingClientRect().top + scrollY - 50;
+  window.scrollTo({
+    top: goToBlockValue,
+    left: 0,
+    behavior: "smooth",
+  });
+}
