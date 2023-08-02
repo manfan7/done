@@ -64,21 +64,21 @@ body {
 }
 .header__text-main-class {
   font-family: raleway_my;
-  font-size: 70px;
+  font-size: calc(20px + 50*(100vw / 1920));
   font-weight: 800;
   text-align: center;
   line-height: 77px;
   margin-bottom: 23px;
 }
 .header__text-main-second {
-  font-size: 30px;
+  font-size: calc(12px + 18*(100vw / 1920));
   line-height: 27px;
   text-align: center;
   margin: 0 0 20px 0;
   opacity: 0.7;
 }
 .header-footer-text {
-  font-size: 40px;
+  font-size: calc(12px + 28*(100vw / 1920));
   margin-bottom: 40px;
 }
 .section-2 {
@@ -99,7 +99,7 @@ body {
   width: 1615px;
 }
 .section-2-text {
-  font-size: 40px;
+  font-size: calc(17px + 23*(100vw / 1920));
   font-weight: 600;
   line-height: 52px;
 }
@@ -188,7 +188,8 @@ body {
   flex: 1;
 }
 .section-4__selector {
-  font-size: 27px;
+  /*font-size: 27px;*/
+  font-size: calc(17px + 10*(100vw / 1920));
   line-height: 35.1px;
   font-weight: 400;
   opacity: 0.7;
