@@ -269,7 +269,8 @@ body {
   transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
 }
 .text-service {
-  font-size: 55px;
+  /*font-size: 55px;*/
+  font-size: calc(14px + 41*(100vw / 1920));
   text-align: center;
   font-weight: 700;
   line-height: 60.5px;
@@ -966,7 +967,8 @@ body {
   transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
 }
 .dizel-centr .text-service {
-  font-size: 60px;
+ /* font-size: 60px;*/
+  font-size: calc(14px + 46*(100vw / 1920));
 }
 .dizel-content {
   display: flex;
@@ -1014,14 +1016,16 @@ body {
   transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
 }
 .dizel-column-descr-title {
-  font-size: 50px;
+  /*font-size: 50px;*/
+  font-size: calc(14px + 36*(100vw / 1920));
   font-weight: 500;
   line-height: 34.2px;
   color: #5a5a57;
   -webkit-text-stroke-width: 0.7px;
 }
 .dizel-column-descr-descr {
-  font-size: 38px;
+ /* font-size: 38px;*/
+  font-size: calc(14px + 24*(100vw / 1920));
   font-weight: 500;
   color: #5a5a57;
   line-height: 47px;
