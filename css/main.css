@@ -349,7 +349,8 @@ body {
   background-image: url(../img/Group42.jpg);
 }
 .images-descr {
-  font-size: 60px;
+  /*font-size: 60px;*/
+  font-size: calc(21px + 40*(100vw / 1920));
   color: #fff;
   font-weight: 700;
   letter-spacing: 2px;
@@ -412,7 +413,8 @@ body {
   font-weight: 900;
 }
 .clients-item-title {
-  font-size: 40px;
+  /*font-size: 40px;*/
+  font-size: calc(20px + 20*(100vw / 1920));
   height: 93px;
   padding-top: 20px;
 }
@@ -423,7 +425,8 @@ body {
   -webkit-text-stroke-width: 3px;
 }
 .clients-item-descr {
-  font-size: 28px;
+  /*font-size: 28px;*/
+  font-size: calc(15px + 13*(100vw / 1920));
   line-height: 39.2px;
   font-weight: 400;
   color: #5a5a57;
@@ -669,14 +672,16 @@ body {
   margin-bottom: -12px;
 }
 .section-6__itemheader {
-  font-size: 42px;
+  /*font-size: 42px;*/
+  font-size: calc(20px + 22*(100vw / 1920));
   line-height: 40.5px;
   font-weight: 700;
   color: #797975;
   -webkit-text-stroke-width: 0.6px;
 }
 .section-6__itemheader-info {
-  font-size: 30px;
+  /*font-size: 30px;*/
+  font-size: calc(15px + 15*(100vw / 1920));
   line-height: 33px;
   font-weight: 500;
   color: #797975;
