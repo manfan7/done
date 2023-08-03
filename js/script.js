@@ -147,6 +147,9 @@ burger.addEventListener("click", () => {
   nav.classList.toggle("open");
 });
 cenaMobile.addEventListener("click", () => {
+  setTimeout(() => {
+    nav.classList.remove("open");
+  }, 50);
   const activeTab = document.querySelector(".content.active");
   let activeCena = activeTab.querySelector("." + cenaMobile.dataset.goto);
   console.log(activeCena);
@@ -171,3 +174,15 @@ function detectActiveCena(item) {
     behavior: "smooth",
   });
 }
+
+function checkScreenWidth() {
+  if (window.innerWidth === 540) {
+    tabs();
+  }
+}
+
+// Запускаем проверку ширины экрана при загрузке страницы
+checkScreenWidth();
+
+// Добавляем обработчик события resize, чтобы проверять ширину экрана при изменении размера окна
+window.addEventListener("resize", checkScreenWidth);
