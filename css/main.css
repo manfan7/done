@@ -1560,7 +1560,7 @@ body {
     margin-bottom: 0px;
   }
   .section-6:after {
-    bottom: 66%;
+    bottom: 68%;
   }
   .service-centr-descr-text {
     font-size: calc(19px + 23 * (100vw / 1920));
@@ -1651,6 +1651,14 @@ body {
     bottom: 62%;
   }
 }
+@media (max-width: 778px) {
+  .section-6__itemheader {
+    font-size: calc(16px + 22 * (100vw / 1920));
+  }
+  .section-6:after {
+    bottom: 68%;
+}
+}
 @media (max-width: 768px) {
   .text-service {
     font-size: calc(12px + 41 * (100vw / 1920));
@@ -1672,6 +1680,7 @@ body {
   }
   .section-6__itemheader-info {
     margin-bottom: 0px;
+    font-size: calc(9px + 15 * (100vw / 1920));
   }
   .section-6__itemheader {
     font-size: calc(15px + 22 * (100vw / 1920));
@@ -1680,7 +1689,7 @@ body {
     bottom: 67%;
   }
   .item-map {
-    height: 517px;
+    height: 496px;
   }
   .clients-item-descr {
     margin-bottom: 10px;
