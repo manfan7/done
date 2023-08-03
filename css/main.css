@@ -1545,6 +1545,11 @@ body {
     justify-content: center;
 }
 }
+@media (max-width: 869px) {
+  .section-6__itemheader {
+    font-size: calc(18px + 22 * (100vw / 1920));
+  }
+  }
 @media (max-width: 820px) {
   .service-centr-images .section-wrapper {
     gap: 2px;
