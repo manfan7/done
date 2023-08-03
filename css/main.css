@@ -1698,6 +1698,12 @@ body {
     bottom: -6px;
   }
 }
+
+@media (max-width: 752px){
+  .cena-item-descr {
+    width: 20%;
+}
+}
 /*------------Mobile section-------------------------------*/
 .mobile-container {
   display: none;
