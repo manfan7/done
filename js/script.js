@@ -178,6 +178,7 @@ function detectActiveCena(item) {
 function checkScreenWidth() {
   if (window.innerWidth === 540) {
     tabs();
+    ymaps.ready(init);
   }
 }
 
