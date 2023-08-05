@@ -144,3 +144,19 @@ function init() {
 }
 
 ymaps.ready(init);
+
+let mapweb = document.querySelector(".item-map");
+let mobiweb = document.querySelector(".item-map-mobile");
+let linkContent = "https://yandex.ru/maps/?pt=27.694907,53.851527&z=18&l=map";
+mapweb.addEventListener("click", function () {
+  initWebyandex();
+});
+mobiweb.addEventListener("click", function () {
+  initWebyandex();
+});
+function initWebyandex() {
+  let link = document.createElement("a");
+  link.setAttribute("href", linkContent);
+
+  link.click();
+}
