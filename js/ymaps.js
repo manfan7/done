@@ -141,12 +141,18 @@ function init() {
   // map.geoObjects.add(placemark);
   mapmobi.geoObjects.add(placemark2);
   //placemark1.balloon.open(); //открывает балун //
+  map.events.add("click", function () {
+    initWebyandex();
+  });
+  mapmobi.events.add("click", function () {
+    initWebyandex();
+  });
 }
 
 ymaps.ready(init);
 
 let mapweb = document.querySelector(".item-map");
-let mobiweb = document.querySelector(".item-map-mobile");
+let mobiweb = document.querySelector(".mapmobile");
 let linkContent = "https://yandex.ru/maps/?pt=27.694907,53.851527&z=18&l=map";
 mapweb.addEventListener("click", function () {
   initWebyandex();
@@ -160,3 +166,6 @@ function initWebyandex() {
 
   link.click();
 }
+window.addEventListener("click", function (event) {
+  console.log(event.target.className);
+});
